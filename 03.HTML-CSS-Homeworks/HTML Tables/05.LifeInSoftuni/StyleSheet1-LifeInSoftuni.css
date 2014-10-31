@@ -1,0 +1,73 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    
+}
+table,td,th{
+    border:1px solid black; 
+    margin:4px;
+    padding:4px;
+}
+th{
+    font-size:50px;
+}
+#first-table td{
+    font-size:20px;
+}
+#first-table{
+    width:462px;
+    height:598px;
+}
+#second-table td{
+    font-size:13px;
+    font-family:Tahoma;
+    font-weight:bold;
+}
+tbody tr:first-child td:first-child{
+    vertical-align:top;
+    text-align:left;
+}
+tbody tr:first-child td:nth-child(2){
+    text-align:right;
+    vertical-align:top;
+}
+tbody tr:nth-child(2) td:nth-child(1){
+    text-align:center;
+    vertical-align:top;
+}
+tbody tr:nth-child(2) td:nth-child(2){
+    text-align:left;
+    vertical-align:central;
+}
+tbody tr:nth-child(2) td:nth-child(3){
+    text-align:center;
+    vertical-align:bottom;
+}
+tbody tr:nth-child(2) td:nth-child(4){
+    text-align:left;
+    vertical-align:central;
+}
+#spec-align{
+    vertical-align:bottom;
+    text-align:right;
+}
+#first-table tbody tr:nth-child(3) td:nth-child(2){
+    text-align:left;
+    vertical-align:bottom;
+}
+#second-table {
+ width:90%;
+ height:90%;
+   margin:3px;
+   
+}
+#second-table td {
+    text-align:center;
+    vertical-align:middle;
+}
+#first-table tbody tr:nth-child(4) td:nth-child(1){
+    text-align:right;
+    vertical-align:central;
+    font-size:30px;
+}

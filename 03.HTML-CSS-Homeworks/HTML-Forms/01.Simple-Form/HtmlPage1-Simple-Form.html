@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title> STARTED WITH BRACKETS</title>
+    <link href="StyleSheet1-Simple-Forms.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <header>Enter the system</header>
+        <p>It is necessary to login in Your account in order to sign in for a course</p>
+        <form id="first-f" method="get" action="#">
+            <span class="first-span">ARE YOU NEW?<span>REGISTER</span></span>
+            <input type="text" name="name" placeholder="User name" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="pass" placeholder="Password" required><br>
+            <input type="password" name="again-pass" placeholder="Confirm Password" required><br>
+            <button id="first-b">Register</button>
+        </form>
+        <form id="second-f" method="get" action="#">
+            <span class="second-span">ALREADY A STUDENT?<span>LOGIN</span></span><br>
+            <input type="text" placeholder="User name" class="resize" required><br>
+            <input type="password" placeholder="Password" class="resize" required><br>
+            <input type="checkbox" id="check" class="box">
+            <label for="check">Remember me?</label>
+            <button class="second-b">LOGIN</button><br>
+            <a href="#">Forgot Password</a>
+        </form>
+
+    </div>
+
+</body>
+</html>

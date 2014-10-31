@@ -1,0 +1,124 @@
+﻿body {
+    margin:0;
+    padding:0;
+   font-family:Tahoma;
+}
+#container{
+    width:750px;
+    height:270px;
+    margin:50px;
+    border-top:5px solid yellow;
+    border-top-style:dashed;
+    border-left:5px solid red;
+    border-left-style:dashed;
+    border-right:10px solid green;
+    border-bottom:7px solid blue;
+    border-bottom-style:double;
+    box-shadow:15px 10px 10px 5px black;
+}
+#shad{
+    margin-top:20px;
+    margin-left:150px;
+    font-size:40px;
+    text-shadow: 10px 15px 20px gray;
+}
+#blue{
+    width:500px;
+    height:120px;
+    border:3px solid blue;
+    text-align:center;
+    margin-left:120px;
+    border-radius:49.5px;
+    
+}
+#green{
+    margin:0px;
+    border:3px solid green;
+    width:98.9%;
+    height:95.5%;
+    border-radius:46.5px;
+}
+#yellow{
+    margin:0px;
+    border:3px solid yellow;
+    width:98.9%;
+    height:95%;
+    border-radius:42px;
+}
+#red{
+    margin:0px;
+    border:3px solid red;
+    width:98.9%;
+    height:95%;
+    border-radius:38px;
+}
+#second-p{
+    margin-top:10px;
+    text-shadow: 5px 5px 10px gray;
+    padding-bottom:15px;
+    font-size:20px;
+}
+#not-buttons-1{
+    height:15px;
+    margin:7px;
+    font-size:16px;
+    background-color:#DC8E1F;
+    width:180px;
+    height:20px;
+    margin-left:50px;
+    position:absolute;
+    text-align:center;
+    border-style:outset;
+    border-color:orange;
+}
+#not-buttons-2{
+    height:15px;
+    margin:7px;
+    font-size:16px;
+    position:absolute;
+    margin-left:250px;
+    text-align:center;
+    background-color:#DC8E1F;
+    width:180px;
+    height:20px;
+    border-style:outset;
+    border-color:orange;
+}
+#first-c{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background-color:grey;
+    border-radius:20px;
+    border:2.5px dashed white;
+    margin-left:420px;
+    margin-top:-10px;
+    background-color:rgba(160, 160, 160, 0.8);
+}
+#second-c{
+    position:absolute;
+    width:40px;
+    height:40px;
+    background-color:grey;
+    border-radius:40px;
+    border:2.5px dashed white;
+    margin-left:475px;
+    margin-top:-65px;
+    background-color:rgba(160, 160, 160, 0.8);
+}
+#third-c{
+    position:absolute;
+    width:150px;
+    height:80px;
+    background-color:grey;
+    border-radius:50px;
+    border:2.5px dashed white;
+    margin-left:550px;
+    margin-top:-155px;
+    background-color:rgba(160, 160, 160, 0.8);
+    text-align:center;
+    padding-top:10px;
+    font-size:30px;
+    color:white;
+    font-weight:bold;
+}

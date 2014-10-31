@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding:0;
+}
+
+.wrapper{
+    width: 360px;
+    height: 360px;
+    background-color: grey;
+    margin: 10px;
+    position: relative;
+    padding-left: 16px;
+    padding-top: 16px;
+    border:2px solid white;
+}
+.wrapper img{
+    display: inline-block;
+    margin:auto;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 70px;
+    border:2px solid black;
+}
+.move{
+    width: 100px;
+    height: 70px;
+    display: inline-block;
+    margin:5px;
+    overflow: visible;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: rotate(5deg);
+    }
+    10%{
+        -webkit-transform: rotate(5deg);
+        -webkit-transform: rotate(-5deg);
+    }
+    20% {
+        -webkit-transform: rotate(5deg);
+    }
+    30%{
+        -webkit-transform: rotate(5deg);
+        -webkit-transform: rotate(-5deg);
+    }
+    40% {
+        -webkit-transform: rotate(5deg);
+    }
+     50%{
+        -webkit-transform: rotate(5deg);
+        -webkit-transform: rotate(-5deg);
+    }
+    
+
+}
+
+.move:hover {
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: initial;
+    -webkit-animation-timing-function: linear;
+}
+
+/*
+.wrapper {
+  transition: background-color 0.9s ease;
+  background-color: grey;
+}
+.wrapper:active {
+  background-color: black;
+}*/
+.move  {
+    position: relative;
+    top: 0px;
+}
+.move :active{
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 40px;
+    transform: scale(3) rotate(0deg) translate(3px);
+    --webkit-animation-name: rotate;
+    -webkit-
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+@-webkit-keyframes rotate{
+	0%{
+		rotation: 360deg;
+	}
+}

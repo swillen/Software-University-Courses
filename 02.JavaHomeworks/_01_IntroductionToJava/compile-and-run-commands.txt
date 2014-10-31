@@ -1,0 +1,9 @@
+1. cd C:\console compilation                              // makes it current directory
+2. set path=%path%;C:\Program Files\Java\jdk1.8.0_11\bin  // tells the system where to find JDK
+3. javac _03_SumTwoNumbers.java                           //  create a class file 
+4. java _03_SumTwoNumbers                                 //runs the class file 
+
+And the program is working just fine :)) 
+
+//cd - goes in to next dir 
+//dir - shows the folders in the selected directory

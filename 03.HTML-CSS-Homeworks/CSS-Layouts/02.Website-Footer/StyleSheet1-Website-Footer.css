@@ -1,0 +1,85 @@
+﻿body {
+    margin:0;
+    padding:0;
+    font-family:Tahoma;
+    color:white;
+}
+footer{
+    position:absolute;
+    background-color:#234465;
+    width:1366px;
+    bottom:0;
+    height:295px;
+
+}
+.buttons{
+    margin-top:10px;
+    margin-left:120px;
+    width:200px;
+    height:250px;
+    display:inline-block;
+    position:absolute;
+}
+input{
+    margin-top:10px;
+    width:200px;
+    height:50px;
+    background-color:#234465;
+    border:2px solid #FF9C00;
+    color:white;
+}
+input:hover{
+    cursor:pointer;
+    background-color:#FF9C00
+}
+.sec-sect{
+    display:inline-block;
+    position:relative;
+    top:0px;
+    left:300px;
+}
+ul{
+    list-style:none;
+}
+ul ul{
+    display:none;
+}
+ul li{
+    float:left;
+    margin-right:20px;
+    width:210px;
+    color:#FF9C00;
+}
+ul li ul{
+    display:inline-block;
+    content:list-item;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+ul>li>ul>li{
+    text-align:left;
+    color:white;
+    font-size:13px;
+    cursor:pointer;
+    margin-left:-40px;
+    padding-top:12px;
+    text-decoration:none;
+}
+ul li ul li a:hover {
+    color:#FF9C00;
+}
+.not-link:hover{
+    color:white;
+    cursor:default;
+}
+li a img:hover{
+    opacity:0.5;
+}
+
+
+
+.fb-like-box{
+    background-color:#E8ECEF;
+}

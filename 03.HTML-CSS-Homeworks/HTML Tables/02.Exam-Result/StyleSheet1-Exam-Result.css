@@ -1,0 +1,29 @@
+﻿body {
+    margin:0;
+    padding:0;
+
+}
+table{
+    padding:3px;
+    margin:10px;
+    border:1px solid black;
+    width:600px;
+    height:300px;
+    font-family:Tahoma;
+}
+table,thead,tr,td,th{
+    border:1px solid black;
+}
+thead th{
+    font-size:20px;
+}
+thead{
+    text-align:center;
+    font-weight:bold;
+}
+td{
+    padding:4px;
+}
+tfoot{
+    text-align:right;
+}

@@ -1,0 +1,148 @@
+body{
+	background-color: white;
+	margin: 0px;
+	padding:0px;
+}
+#wrapper{
+	background-color: #6798FF;
+	margin: 0 auto;
+	width: 960px;
+	position: relative;
+}
+#wrapper header h1 a span {
+	color: white;
+	text-align: center;
+}
+
+#wrapper a{
+	text-decoration: none;
+	color: black;
+}
+ul {
+	list-style: none;
+}
+article,aside,footer{
+	border: 1px solid black;
+	background-color: rgba(255,255,255,0.8);
+
+}
+#wrapper nav ul li{
+	display: inline-block;
+	position: relative;
+	margin-right: 3%;
+	left: 50%;
+	border: 1px solid black;
+	background-color: white;
+	padding: 5px;
+}
+article,footer,aside{
+	margin:1%;
+	padding-left: 2%;
+	clear: both;
+}
+section{
+	width: 65%;
+	display: inline-block;
+	float: left;
+}
+aside {
+	margin-top: 7px;
+	width: 25%;
+	display: inline-block;
+	padding-left: 0px;
+}
+aside ul  li{
+	margin-left: -20px;
+	word-wrap:  break-word;
+	padding-right: 15px;
+	display: block;
+	margin-bottom: 5px;
+}
+#wrapper>header>h1{
+	position: relative;
+	border-bottom: 1px solid black;
+	bottom: -35px;
+	padding-bottom: 30px;
+}
+body footer {
+    	text-align: center;
+    	margin-bottom: 20px;
+    	line-height: 5px;
+}
+body footer h2 {
+        font-size: 1em;
+        margin-top: 1.2%;
+ }
+/*@media only screen and (min-width: 960px){
+	#wrapper{
+		width: 100%;
+	}
+
+}*/
+@media only screen and (max-width: 960px){
+	#wrapper{
+		max-width: 90%;
+	}
+	body section{
+		margin-left: 0;
+	}
+	body header nav{
+		width: 80%;
+	}
+	
+}
+@media only screen and (max-width: 780px){
+	
+	body header nav {
+		margin-left: -15%;
+	}
+	aside{
+		width: 97%;
+	}
+	section{
+		width: 100%;
+	}
+	aside ul li {
+		float: left;
+		display: block;
+		width: 20%;
+		margin: 5px;
+	}
+}
+@media only screen and (max-width: 640px){
+	body header nav ul  li{
+		float: none;
+		width: 100%;
+		text-align: center;
+		
+	}
+	body header nav ul {
+		margin-right: 20%;
+	}
+	aside{
+		float: none;
+		display: block;
+		width: 97%;
+	}
+	section{
+		width: 100%;
+	}
+	footer{
+		margin-top: 4%;
+		padding: 2%;
+	}
+	#wrapper header h1    {
+	text-align: center;
+	padding-left: 4%;
+	}
+	
+	aside ul li {
+		float: none;
+		clear: both;
+		display: table-row;
+
+	}
+	aside ul {
+		margin-left: -5%;
+	}
+}

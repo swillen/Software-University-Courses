@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flight Order</title>
+    <link href="StyleSheet1-Flight-Order.css" rel="stylesheet" />
+</head>
+<body>
+    <article>
+        <header><h1>FLIGHT ORDER</h1></header>
+        <form class="left-form">
+            <div id="italic">From</div>
+            <select id="select-position" class="style-first-select">
+                <option selected style="display:none" value="ent">Enter a city</option>
+                <option value="pleven">Pleven</option>
+                <option value="varna">Varna</option>    
+                <option value="burgas">Burgas</option>
+                <option value="sofia">Sofia</option>
+            </select><br /><br />
+            <span id="italic" >Departure date</span><br />
+            <input type="date" value="2014-06-09" id="first-set" /><br />
+            <span id="italic">Return date</span><br />
+            <input type="date" value="2014-06-13" />
+            <div id="one">12+</div>
+            <div id="two">2-12</div>
+            <div id="three">0-2</div><br />
+            <input type="number" value="0" class="numbers"/>
+            <input type="number" value="0"  class="numbers"/>
+            <input type="number" value="0" class="numbers"/>
+
+        </form>
+        <form class="right-form"
+            <div id="italic">To</div><br />
+            <select class="style-second-select">
+                <option selected style="display:none" value="ent">Enter a city</option>
+                <option value="pleven">Pleven</option>
+                <option value="varna">Varna</option>
+                <option value="burgas">Burgas</option>
+                <option value="sofia">Sofia</option>
+            </select><br />
+            <input type="checkbox" id="check"/>
+            <label for="check" id="italic">Prefer directs</label><br />
+            <span id="italic" >Time interval</span><br />
+            <input type="datetime" value="00:20" class="time-interval"/>
+            <input type="datetime" value="05:00" class="time-interval"/><br />
+            <span id="italic">Time interval</span><br />
+            <input type="datetime" value="00:20" class="time-interval" />
+            <input type="datetime" value="05:00" class="time-interval" /><br />
+            <div id="set-s">Choose class</div>
+            <select id="null-margin">
+                <option >Economy</option>
+                <option>Premium economy</option>
+                <option>Business</option>
+            </select><br />
+            <button>Search</button>
+
+        </form>
+    </article>
+</body>
+</html>
