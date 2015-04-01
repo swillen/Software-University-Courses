@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #wrapper{
+            background-color: purple;
+            width: 300px;
+            margin: 0 auto;
+        }
+        form{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #form-wrap div{
+            background-color: white;
+            padding-top: 3px;
+            padding-left: 5px;
+        }
+        #form-wrap input , #form-wrap div{
+            width: 100%;
+            height: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <form action="#" method="get">
+        <div id="form-wrap">
+            <input type="text" name="text-field" id="txt" onblur="changeBackground()"/>
+            <div id="div-value"></div>
+            <input type="button" value="Validate"/>
+        </div>
+    </form>
+</div>
+<script>
+    
+    var div = document.getElementById('div-value');
+
+    function changeBackground(){
+        var text = document.getElementById("txt").value;
+        div.innerHTML=text;
+        var divValue = document.getElementById('div-value').innerHTML;
+        if(emailValidation(divValue)==true){
+            div.style.backgroundColor = 'green';
+        }
+
+        else if(divValue==''){
+            div.style.fontSize= '14px';
+            div.style.backgroundColor='white';
+            div.innerHTML = 'Please enter your email :)';
+        }
+
+
+        else{
+            div.style.backgroundColor = 'red';
+        }
+    }
+
+    function emailValidation(divValue){
+        var mailMatch = /^[a-zA-Z0-9\.\-]+\@([a-zA-Z]+\.){1,5}[a-zA-Z]{2,4}$/ig;
+        if(divValue.trim().match(mailMatch)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

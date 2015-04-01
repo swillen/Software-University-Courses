@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        #input-wrapper{
+            width: 30%;
+            margin: 0 auto;
+            margin-top:5px;
+        }
+        #input-wrapper>label{
+            display: block;
+            margin: 0 auto;
+
+        }
+        h1{
+            margin:0 auto;
+            text-align: center;
+        }
+        #wrapper {
+            background-color:pink;
+            width: 40%;
+            margin: 0 auto;
+            height: 80%;
+            padding: 10px;
+            height: 720px;
+        }
+        #input-wrapper:nth-child(10) label{
+            display: inline-block;
+        }
+        #input-wrapper:nth-child(12) input{
+            width: 48.5%;
+
+        }
+    </style>
+</head>
+<body>
+     <div id="wrapper" >
+         <h1>Webinar Registracion</h1>
+        <section>
+            <article>
+                <form action="#" method="get">
+                    <div id="input-wrapper">
+                        <label for="names">Name and last name</label>
+                        <input type="text" name="namees" id="names"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="adress">Adress</label>
+                        <input type="text" name="adress" id="adress"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="postcode">Postal code</label>
+                        <input type="number" name="post-code" id="postcode"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="names">Name and last name</label>
+                        <input type="text" name="namees" id="names"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="names">Name and last name</label>
+                        <input type="text" name="namees" id="names"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone" id="phone"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date"/>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <input type="checkbox" name="facture" id="facture" />
+                        <label for="facture">I wish facture</label>
+                    </div>
+                    <div id="hidden">
+                        <div id="input-wrapper">
+                            <label for="firm">Firm</label>
+                            <input type="text" name="firm" id="firm"/>
+                        </div>
+
+                        <div id="input-wrapper">
+                            <label for="mol">MOL</label>
+                            <input type="number" name="mol" id="mol"/>
+                        </div>
+
+                        <div id="input-wrapper">
+                            <label for="eik">EIK</label>
+                            <input type="text" name="eik" id="eik"/>
+                        </div>
+
+                        <div id="input-wrapper">
+                            <label for="in">IN</label>
+                            <input type="text" name="in" id="in"/>
+                        </div>
+
+                        <div id="input-wrapper">
+                            <label for="adr">Adress</label>
+                            <input type="text" name="adr" id="adr"/>
+                        </div>
+
+
+                    </div>
+                    <div id="input-wrapper">
+                        <input type="button" value="Register"/>
+                        <input type="reset" value="Clear" id="reset"/>
+                    </div>
+
+
+                </form>
+            </article>
+        </section>
+     </div>
+     <script>
+         window.onload = function () {
+             var input = document.querySelector('input[type=checkbox]');
+             var element  =document.getElementById('hidden');
+             function check() {
+                 if (input.checked) {
+                     element.style.visibility = 'visible';
+                 }else{
+                     var el = document.getElementById('hidden');
+                     element.style.visibility = 'hidden';
+                 }
+             }
+             input.onchange = check;
+             var resetButt = document.getElementById('reset');
+             resetButt.onclick =check;
+             check();
+         }
+     </script>
+</body>
+</html>
