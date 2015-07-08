@@ -211,16 +211,14 @@ ORDER BY [MonasteriesCount] DESC ,c.CountryName
 
 --- problem 17 -----------------------------------
 
-SELECT m.MountainRange as [Mountains],p.PeakName as [name] ,p.Elevation as [elevation]
-FROM Mountains m
-	JOIN Peaks p
-		ON p.MountainId = m.Id
-GROUP BY m.MountainRange , p.PeakName,p.Elevation
-ORDER BY m.MountainRange ASC
-	FOR XML path, root;
+-- SELECT m.MountainRange as [Mountains],p.PeakName as [name] ,p.Elevation as [elevation]
+-- FROM Mountains m
+	-- JOIN Peaks p
+		-- ON p.MountainId = m.Id
+-- GROUP BY m.MountainRange , p.PeakName,p.Elevation
+-- ORDER BY m.MountainRange ASC
+	-- FOR XML path, root;
 
-
--- problem 18 ---------------------------------------------
 
 IF OBJECT_ID('fn_MountainsPeaksJSON') IS NOT NULL
   DROP FUNCTION fn_MountainsPeaksJSON
