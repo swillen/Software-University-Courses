@@ -1,0 +1,1 @@
+If you can not run this project you must go to StudentSystem.ConsoleClient and reload Entity Framework from nuget package
