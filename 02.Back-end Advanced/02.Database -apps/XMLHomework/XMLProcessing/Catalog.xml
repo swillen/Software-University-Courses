@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <album name ="La la la">
+        <artist>Mia Pia</artist>
+        <year>2010</year>
+        <producer>BigBoss</producer>
+        <price>10</price>
+        <songs-list>
+              <title>Go aroun</title>
+              <duration>4:95</duration>
+        </songs-list>
+  </album>
+  <album name="Never back">
+        <artist>Brit</artist>
+        <year>2005</year>
+        <producer>John Doe</producer>
+        <price>5</price>
+        <song-list>
+              <title>Check this out</title>
+              <duration>3:02</duration>
+        </song-list>
+  </album>
+</catalog>  

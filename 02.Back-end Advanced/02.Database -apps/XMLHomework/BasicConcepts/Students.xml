@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<students xmlns="urn:students">
+    <student>
+          <name>Misha Mishovic</name>
+          <gender>female</gender>
+          <birth-date>1990-01-01</birth-date>
+          <phone-number>66666666</phone-number>
+          <email>misha@mail.com</email>
+          <university>Greenuich University</university>
+          <specialty>Engineering</specialty>
+          <faculty-number>230424024</faculty-number>
+          <taken-exams>
+              <exam-name>Something..</exam-name>
+              <date-taken>2015-07-01</date-taken>
+              <grade>5.10</grade>
+          </taken-exams>
+    </student>
+    <student>
+          <name>Second Student</name>
+          <gender>male</gender>
+          <birth-date>1995-06-01</birth-date>
+          <phone-number>+3354332424</phone-number>
+          <email>second-student@mail.com</email>
+          <university>UIMPO</university>
+          <specialty>Law</specialty>
+          <faculty-number>230424024</faculty-number>
+          <taken-exams>
+                  <exam-name>Something..</exam-name>
+                  <date-taken>2015-07-04</date-taken>
+                  <grade>6</grade>
+          </taken-exams>
+      <endorsements>
+        <author-name>Alek</author-name>
+        <author-email>alex@mail.com</author-email>
+        <endorsment-date>2014-01-10</endorsment-date>
+        <endorsment-text>Some text</endorsment-text>
+      </endorsements>
+    </student>
+</students>
