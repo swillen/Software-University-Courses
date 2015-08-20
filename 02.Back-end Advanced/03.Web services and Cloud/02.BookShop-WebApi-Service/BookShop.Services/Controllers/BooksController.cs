@@ -45,7 +45,7 @@ namespace BookShop.Services.Controllers
         }
 
         // GET	/api/books?search={word}
-
+		[Route("books")]
         public IHttpActionResult GetBooksBySearchWord(string searchWord)
         {
             var books = db.Books.Where(b => b.Title.Contains(searchWord)).Select(b => new BookViewModelTitleAndId()
