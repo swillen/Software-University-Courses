@@ -26,11 +26,17 @@ namespace BookShop.Services.Controllers
             var book = db.Books.Where(b => b.Id == id).Select(b => new BookViewModel()
             {
                 Title = b.Title,
-                Categories = b.Categories.Select(c=>c.Name),
+                //Categories = b.Categories.Select(c=>c.Name),
+                Categories = b.Categories.Select(c => new CategorieViewModelNames()
+                {
+                   Name = c.Name
+                }),
                 Edition = b.Edition,
                 Price = b.Price,
                 Description = b.Description ?? null,
                 Restriction = b.AgeRestriction,
+                Copies = b.Copies,
+                ReleaseDate = b.ReleaseDate,
                 AuthorData = new AuthorViewModel()
                 {
                     Id = b.Author.Id,

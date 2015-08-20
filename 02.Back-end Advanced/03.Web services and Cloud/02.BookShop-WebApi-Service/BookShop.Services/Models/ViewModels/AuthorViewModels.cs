@@ -7,7 +7,6 @@ using BookShop.Models;
 
 namespace BookShop.Services.Models.ViewModels
 {
-     [EnableQuery]
     public class AuthorViewModelWithBookCollection
     {
         public int Id { get; set; }
@@ -16,7 +15,6 @@ namespace BookShop.Services.Models.ViewModels
         public IEnumerable<string> BookTitles { get; set; } 
 
     }
-
     public class AuthorViewModel
     {
         public int  Id { get; set; }

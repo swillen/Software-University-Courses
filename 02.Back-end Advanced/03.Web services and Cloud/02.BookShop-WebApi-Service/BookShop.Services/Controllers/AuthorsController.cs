@@ -42,7 +42,6 @@ namespace BookShop.Services.Controllers
 
         //POST	/api/authors
         [HttpPost]
-        [EnableQuery]
         public IHttpActionResult AddAuthor(AddAuthorBindingModel model)
         {
             if (model == null)
@@ -69,12 +68,33 @@ namespace BookShop.Services.Controllers
         [Route("api/authors/{id}/books")]
         public IHttpActionResult GetBooksByAuthorId(int id)
         {
-            var books = db.Books.Where(b => b.Author.Id == id).OrderBy(b => b.Title).Take(10);
+            var books = db.Books.Where(b => b.Author.Id == id)
+                .OrderBy(b => b.Title)
+                .Take(10)
+                .Select(b => new BookViewModel()
+                {
+                    Title = b.Title,
+                    Description = b.Description,
+                    Edition = b.Edition,
+                    Price = b.Price,
+                    Restriction = b.AgeRestriction,
+                    Copies = b.Copies,
+                    ReleaseDate = b.ReleaseDate,
+                    AuthorData = new AuthorViewModel()
+                    {
+                        Id = b.Author.Id,
+                        LastName = b.Author.LastName
+                    },
+                    Categories = b.Categories.Select(c => new CategorieViewModelNames()
+                    {
+                        Name = c.Name
+                    })
+                });
             if (!books.Any())
             {
                 return this.NotFound();
             }
-            return this.Ok(books.Select(b => b.Title));
+            return this.Ok(books);
         }
     }
 }

@@ -14,8 +14,10 @@ namespace BookShop.Services.Models.ViewModels
         public Edition Edition { get; set; }
         public decimal Price { get; set; }
         public AgeRestriction Restriction { get; set; }
+        public decimal Copies { get; set; }
+        public DateTime? ReleaseDate { get; set; }
 
-        public IEnumerable<string> Categories { get; set; }
+        public IEnumerable<CategorieViewModelNames> Categories { get; set; }
         public AuthorViewModel AuthorData { get; set; }
 
     }
